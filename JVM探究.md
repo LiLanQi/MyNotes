@@ -2,7 +2,8 @@
 
 1.JVM的位置
 
-![image-20220505234645122](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220505234645122.png)
+![image](https://user-images.githubusercontent.com/42244102/224349670-a21337c3-16d8-4356-a6dc-96beae3d35f8.png)
+
 
 2. JVM体系结构
 
@@ -23,6 +24,8 @@
 ​	3.4 应用程序加载器（APP）
 
 ​	3.5 百度：双亲委派机制-->APP--->EXC---->BOOT      1.类加载器收到类加载请求(new) 2.将这个请求向上委托给父类加载器去完成，一直向上委托，直到启动类加载器 3.启动类加载器检测是否能加载当前这个类，能加载就结束，使用当前的加载器，否则，抛出异常，通知子加载器进行加载 4.重复步骤3
+![image](https://user-images.githubusercontent.com/42244102/224351410-5a86a385-2d08-4655-9d04-399e2db8ae0a.png)
+
 
 4. Native关键字：凡是带了native关键字的，说明java的作用范围达不到了，会去调用底层C语言的库，会进入本地方法栈，调用本地方法接口 JNI，JNI作用：扩展Java的使用，融合不同的编程语言为Java所用！最初是C、C++，它在内存区域中专门开辟了一块标记区域：Native Method Stack，登记native方法，它最终执行的时候，加载本地方法库中的方法（通过JNI）
 
