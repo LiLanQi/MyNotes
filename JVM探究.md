@@ -7,7 +7,7 @@
 
 2. JVM体系结构
 
-   ![image-20220505235103265](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220505235103265.png)
+   ![image](https://user-images.githubusercontent.com/42244102/224352585-3d28cace-905a-4027-8c31-46f73f3e3353.png)
 
 3. 类加载器
 
@@ -25,6 +25,7 @@
 
 ​	3.5 百度：双亲委派机制-->APP--->EXC---->BOOT      1.类加载器收到类加载请求(new) 2.将这个请求向上委托给父类加载器去完成，一直向上委托，直到启动类加载器 3.启动类加载器检测是否能加载当前这个类，能加载就结束，使用当前的加载器，否则，抛出异常，通知子加载器进行加载 4.重复步骤3
 ![image](https://user-images.githubusercontent.com/42244102/224351410-5a86a385-2d08-4655-9d04-399e2db8ae0a.png)
+详见：https://www.cnblogs.com/hollischuang/p/14260801.html
 
 
 4. Native关键字：凡是带了native关键字的，说明java的作用范围达不到了，会去调用底层C语言的库，会进入本地方法栈，调用本地方法接口 JNI，JNI作用：扩展Java的使用，融合不同的编程语言为Java所用！最初是C、C++，它在内存区域中专门开辟了一块标记区域：Native Method Stack，登记native方法，它最终执行的时候，加载本地方法库中的方法（通过JNI）
@@ -32,6 +33,7 @@
 5. 方法区：方法区是被所有线程共享，所有字段和方法字节码以及一些特殊方法，如构造函数，接口代码也在此定义，简单说，所有定义的方法的信息都保存在该区域，此区域属于共享区间
 
    静态变量、常量、类信息（构造方法、接口定义）、运行时的常量池也存在方法区中，但是实例变量存在堆内存中，和方法区无关，方法区在堆中的元空间中
+   运行时的常量池在方法区中，字符串常量池在堆中
 
 6. JVM类型：Sun公司的Hotspot、BEA的JRockit、IBM的j9VM，我们学习的都是Hotspot，在 Hotspot JVM 中，直接将本地方法栈和虚拟机栈合二为一
 
@@ -49,7 +51,7 @@
 
      - 永久区            
 
-       ![image-20220506214600416](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220506214600416.png)
+       ![image](https://user-images.githubusercontent.com/42244102/224354329-d4b48b75-e597-4880-95aa-46ada67b199b.png)
 
    					GC垃圾回收，主要是在伊甸园区和养老区
 
