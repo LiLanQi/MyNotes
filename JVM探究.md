@@ -1,5 +1,6 @@
 # JVM探究
-
+链接参考：https://tobebetterjavaer.com/interview/java-jvm-baguwen.html#%E5%B8%B8%E8%A7%81%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E7%AD%96%E7%95%A5
+https://javaguide.cn/java/jvm/jvm-garbage-collection.html#serial-%E6%94%B6%E9%9B%86%E5%99%A8
 1.JVM的位置
 
 ![image](https://user-images.githubusercontent.com/42244102/224349670-a21337c3-16d8-4356-a6dc-96beae3d35f8.png)
@@ -13,7 +14,7 @@
 
    作用：加载class文件
 
-   ![image-20220505235941599](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220505235941599.png)
+   ![image](https://user-images.githubusercontent.com/42244102/224366331-e0a68861-ca0d-4a5d-b479-a785af690ea5.png)
 
 ​	3.1 虚拟机自带的加载器
 
